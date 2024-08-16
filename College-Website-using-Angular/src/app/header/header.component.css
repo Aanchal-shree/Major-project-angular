@@ -1,0 +1,72 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  padding: 10px;
+  color: black;
+
+}
+
+.name
+{
+  margin-top: 30px;
+}
+.abr
+ {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px;
+  margin-top: -40px;
+  margin-bottom: 5px;
+}
+#abr {
+  color: white;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px;
+  padding-left: 360px;
+}
+
+.sbitlogo img {
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+
+
+.content {
+  margin-top: 0px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+}
+
+.Angularlogo img {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.sbitlogo2 img {
+  margin-left: 60px;
+  width: 130px;
+  height: 130px;
+}
+
+
+
