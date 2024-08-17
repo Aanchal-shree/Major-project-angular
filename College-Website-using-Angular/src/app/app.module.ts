@@ -13,6 +13,7 @@ import { Marquee2Component } from './marquee2/marquee2.component';
 import { BoxesComponent } from './boxes/boxes.component';
 import { LogosComponent } from './logos/logos.component';
 import { FterComponent } from './fter/fter.component';
+import { AluminiComponent } from './alumini/alumini.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FterComponent } from './fter/fter.component';
     Marquee2Component,
     BoxesComponent,
     LogosComponent,
-    FterComponent
+    FterComponent,
+    AluminiComponent
   ],
   imports: [
     BrowserModule
