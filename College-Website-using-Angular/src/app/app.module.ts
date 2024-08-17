@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +15,7 @@ import { BoxesComponent } from './boxes/boxes.component';
 import { LogosComponent } from './logos/logos.component';
 import { FterComponent } from './fter/fter.component';
 import { AluminiComponent } from './alumini/alumini.component';
+import { AdmissionComponent } from './admission/admission.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,15 @@ import { AluminiComponent } from './alumini/alumini.component';
     BoxesComponent,
     LogosComponent,
     FterComponent,
-    AluminiComponent
+    AluminiComponent,
+    AdmissionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
+
+export class AppRoutingModule { }
