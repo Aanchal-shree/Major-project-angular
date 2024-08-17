@@ -1,40 +1,27 @@
-.navbar
-{
-  background-color: rgba(255, 0, 102, 0.886);
-  overflow: hidden;
-  text-align: center;
-  font-size: 22px;
+.navbar {
+  background-color: #f8f9fa; /* You can customize the background color */
+  padding: 10px; /* Adjust the padding as needed */
 }
 
-.navbar a
-{
-  display: inline-block;
-  color: rgb(245, 236, 236);
-  padding: 14px 16px;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* This aligns the list items horizontally */
+  justify-content: space-around; /* This will space out the items evenly */
+}
+
+.navbar ul li {
+  margin: 0 15px; /* Adjust the space between each item */
+}
+
+.navbar ul li a {
   text-decoration: none;
-  margin: 0 10px;
-}
-
-.navbar a:hover
-{
-  background-color:rgb(18, 13, 13);
-  color: rgb(241, 241, 19);
-}
-.navbar a:first-child::before
- {
-  content: "Click to navigate \2192 ";
-  margin-right: 5px;
+  color: #333; /* Customize the text color */
+  font-size: 18px; /* Adjust the font size */
   font-weight: bold;
-  font-size: 24px;
-  color: rgb(239, 239, 234);
 }
 
-
-
-
-
-
-
-
-
-
+.navbar ul li a:hover {
+  color: #007bff; /* Change the color on hover */
+}
