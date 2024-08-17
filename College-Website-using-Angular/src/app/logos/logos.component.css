@@ -1,0 +1,77 @@
+/* General styles for the container */
+div {
+    background-color: white;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  /* Flexbox styles for the section */
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Styles for the images */
+  section img {
+    margin-right: 5px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* Remove margin-right from the last image */
+  section img:last-child {
+    margin-right: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    div {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    section img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    div {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    section img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    div {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    section {
+      justify-content: center;
+    }
+    section img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    div {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    section img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
