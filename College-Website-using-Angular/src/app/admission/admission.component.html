@@ -1,11 +1,58 @@
-<div class="admission-courses">
-    <h2>Admission Courses Information</h2>
-    <div *ngFor="let course of courses" class="course">
-      <h3>{{ course.name }}</h3>
-      <p><strong>No. of Seats:</strong> {{ course.seats }}</p>
-      <p><strong>Duration of Course:</strong> {{ course.duration }}</p>
-      <p><strong>Eligibility:</strong> {{ course.eligibility }}</p>
-      <p *ngIf="course.additionalInfo"><strong>Additional Info:</strong> {{ course.additionalInfo }}</p>
+<div class="admission-container">
+  <h1>Admission Information</h1>
+
+  <div class="advertisement">
+    <h2>Why Study at Dr. APJ Abdul Kalam Women's Institute of Technology?</h2>
+    <p>
+      Dr. APJ Abdul Kalam Women's Institute of Technology offers state-of-the-art facilities, experienced faculty, and a vibrant campus life. Our programs are designed to provide students with the skills and knowledge required to excel in their careers. Join us and be part of a prestigious institution committed to excellence in education.
+    </p>
+  </div>
+
+  <div class="courses">
+    <div class="course-card">
+      <h3>B.Tech - Information Technology</h3>
+      <p><strong>No. of seats:</strong> 30</p>
+      <p><strong>Duration of course:</strong> 4 Years (Eight Semester)</p>
+      <p>
+        <strong>Eligibility:</strong> 10+2 or equivalent with minimum 45% marks (40% for reserved category) in P+C+M / P+C+B+M taken together and pass in English.
+      </p>
+    </div>
+
+    <div class="course-card">
+      <h3>B.Tech - Computer Science & Engineering</h3>
+      <p><strong>No. of seats:</strong> 60</p>
+      <p><strong>Duration of course:</strong> 4 Years (Eight Semester)</p>
+      <p>
+        <strong>Eligibility:</strong> 10+2 or equivalent with minimum 45% marks (40% for reserved category) in P+C+M / P+C+B+M taken together and pass in English.
+      </p>
+    </div>
+
+    <div class="course-card">
+      <h3>B.Tech - Bioinformatics</h3>
+      <p><strong>AICTE Approval Awaited</strong></p>
+      <p><strong>No. of seats:</strong> 30</p>
+      <p><strong>Duration of course:</strong> 4 Years (Eight Semester)</p>
+      <p>
+        <strong>Eligibility:</strong> 10+2 or equivalent with minimum 45% marks (40% for reserved category) in P+C+M / P+C+B+M / P+C+B taken together and pass in English.
+      </p>
+    </div>
+
+    <div class="course-card">
+      <h3>Master of Computer Application (MCA)</h3>
+      <p><strong>No. of seats:</strong> 30</p>
+      <p><strong>Duration of course:</strong> 3 Years (Six Semester)</p>
+      <p>
+        <strong>Eligibility:</strong> 3-year recognized bachelor degree with minimum 50% marks (45% for reserved category) & mathematics at 10+2/ equivalent level.
+      </p>
+    </div>
+
+    <div class="course-card">
+      <h3>Bachelor of Computer Application (BCA)</h3>
+      <p><strong>No. of seats:</strong> 30</p>
+      <p><strong>Duration of course:</strong> 3 Years (Six Semester)</p>
+      <p>
+        <strong>Eligibility:</strong> 10+2 or equivalent with minimum 45% marks (40% for reserved category) in P+C+M / P+C+B+M taken together and pass in English.
+      </p>
     </div>
   </div>
-  
+</div>
