@@ -1,27 +1,62 @@
-.admission-courses {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
+.admission-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.advertisement {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+}
+
+.advertisement h2 {
+  margin-top: 0;
+  color: #0d4904;
+}
+
+.advertisement p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.course-card {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: #0d4904;
+  font-size: 20px;
+}
+
+.course-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .courses {
+    grid-template-columns: 1fr;
   }
-  
-  .course {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  h3 {
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin: 5px 0;
-  }
-  
-  p strong {
-    color: #333;
-  }
-  
+}
