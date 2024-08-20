@@ -1,235 +1,70 @@
-<<<<<<< HEAD
-* {
-	font-family: Arial, sans-serif;
-  }
-  
-  .name {
-	margin-top: 30px;
-  }
-  
-  .abr {
-	background-color: rgb(37, 37, 37);
-	color: white;
-	margin: 0;
-	padding: 10px;
-	margin-top: -40px;
-	margin-bottom: 5px;
-  }
-  
-  #abr {
-	color: white;
-	margin: 0;
-	padding: 10px;
-	padding-left: 360px;
-  }
-  
-  .section-title {
-	width: 80%;
-	margin: 0 auto;
-	text-align: center;
-  }
-  
-  .content {
-	margin: 0 auto;
-	max-width: 1200px;
-	padding: 50px 20px;
-  }
-  
-  .row {
-=======
-*
-{
-
-  font-family: Arial, sans-serif;
-}
-.name
-{
-  margin-top: 30px;
-
-}
-.abr
- {
-  background-color: rgb(189, 49, 49);
-  color: white;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 10px;
-  margin-top: -40px;
-  margin-bottom: 5px;
-}
-#abr {
-  color: white;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 10px;
-  padding-left: 360px;
-}
-.section-title {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.content
- {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 50px 0;
+section.whysbit {
+    padding: 50px 0;
+    background-color: #f9f9f9;
 }
-.row
-{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
+.section-title h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
-.box
-{
-  text-align: center;
-  margin-bottom: 50px;
-  flex-basis: calc(25% - 20px);
-  margin-bottom: 20px;
+
+.section-title p {
+    text-align: center;
+    margin-bottom: 50px;
 }
-.image img
-{
-  width: 150px;
-  height: 150px;
-  margin-bottom: 20px;
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.container{
-	max-width: 1170px;
-	margin:auto;
+
+.box {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
 }
-.row{
->>>>>>> 95ec0188b9a9e3cec72f0dd0ec11fa398dbd92a7
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-  }
-  
-  .box {
-	text-align: center;
-	flex-basis: calc(25% - 20px);
-	margin-bottom: 20px;
-  }
-  
-  .image img {
-	width: 150px;
-	height: 150px;
-	margin-bottom: 20px;
-  }
-  
-  .container {
-	max-width: 1170px;
-	margin: auto;
-  }
-  
-  ul {
-	list-style: none;
-  }
-  
-  .footer {
-	background-color: #24262b;
-	padding: 70px 20px;
-  }
-  
-  .footer-col {
-	width: 25%;
-	padding: 0 15px;
-  }
-  
-  .footer-col h4 {
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-  }
-  
-  .footer-col h4::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-  }
-  
-  .footer-col ul li:not(:last-child) {
-	margin-bottom: 10px;
-  }
-  
-  .footer-col ul li a {
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #bbbbbb;
-	text-decoration: none;
-	font-weight: 300;
-	display: block;
-	transition: all 0.3s ease;
-  }
-  
-  .footer-col ul li a:hover {
-	color: #ffffff;
-	padding-left: 8px;
-  }
-  
-  .footer-col .social-links a {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255, 255, 255, 0.2);
-	margin: 0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-  }
-  
-  .footer-col .social-links a:hover {
-	color: #24262b;
-	background-color: #ffffff;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 991px) {
-	#abr {
-	  padding-left: 20px;
-	  padding-right: 20px;
-	  text-align: center;
-	}
-	
-	.box {
-	  flex-basis: calc(50% - 20px);
-	}
-  }
-  
-  @media (max-width: 767px) {
-	.footer-col {
-	  width: 50%;
-	  margin-bottom: 30px;
-	}
-  
-	.box {
-	  flex-basis: calc(100% - 20px);
-	}
-  }
-  
-  @media (max-width: 574px) {
-	.footer-col {
-	  width: 100%;
-	}
-  
-	.section-title, .content {
-	  padding: 20px;
-	}
-  
-	.image img {
-	  width: 100px;
-	  height: 100px;
-	}
-  }
-  
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box h4 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .box {
+        width: 45%;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+}
