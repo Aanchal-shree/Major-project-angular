@@ -58,3 +58,54 @@
   font-size: 14px;
   color: #7f8c8d;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-column {
+      min-width: 100%;
+      margin: 10px 0;
+  }
+
+  .footer-column p,
+  .footer-column a {
+      font-size: 16px;
+  }
+
+  .social-icons {
+      margin-top: 20px;
+  }
+
+  .social-icons a {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+      padding: 0 10px;
+  }
+
+  .footer-column h3 {
+      font-size: 16px;
+  }
+
+  .footer-column p,
+  .footer-column a {
+      font-size: 14px;
+  }
+
+  .footer-bottom {
+      font-size: 12px;
+  }
+
+  .social-icons a {
+      font-size: 18px;
+      margin: 0 8px;
+  }
+}
