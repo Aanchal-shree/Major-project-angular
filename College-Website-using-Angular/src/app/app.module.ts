@@ -17,6 +17,12 @@ import { FterComponent } from './fter/fter.component';
 import { AluminiComponent } from './alumini/alumini.component';
 import { AdmissionComponent } from './admission/admission.component';
 
+const routes: Routes = [
+  { path: 'admission', component: AdmissionComponent },
+  // Add other routes here
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,8 +41,10 @@ import { AdmissionComponent } from './admission/admission.component';
     AdmissionComponent
   ],
   imports: [
+    [RouterModule.forRoot(routes)],
     BrowserModule,
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })
