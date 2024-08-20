@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageslidingComponent implements OnInit {
   images: { src: string, alt: string, active: boolean }[] = [
-    { src: 'assets/college1.webp', alt: 'Image 1', active: true },
-    { src: 'assets/college2.webp', alt: 'Image 2', active: false },
-    { src: 'assets/college3.webp', alt: 'Image 3', active: false },
-    { src: 'assets/college4.webp', alt: 'Image 4', active: false },
-    { src: 'assets/college5.webp', alt: 'Image 5', active: false },
-    { src: 'assets/college6.webp', alt: 'Image 6', active: false }
+    { src: 'assets/college1.jpg', alt: 'Image 1', active: true },
+    { src: 'assets/college2.jpg', alt: 'Image 2', active: false },
+    { src: 'assets/college3.jpg', alt: 'Image 3', active: false },
+    { src: 'assets/college4.jpg', alt: 'Image 4', active: false },
+    { src: 'assets/jubliee hall.jpg', alt: 'Image 5', active: false },
+    { src: 'assets/college6.png', alt: 'Image 6', active: false }
   ];
 
   c = 0;

@@ -1,0 +1,11 @@
+<div class="admission-courses">
+    <h2>Admission Courses Information</h2>
+    <div *ngFor="let course of courses" class="course">
+      <h3>{{ course.name }}</h3>
+      <p><strong>No. of Seats:</strong> {{ course.seats }}</p>
+      <p><strong>Duration of Course:</strong> {{ course.duration }}</p>
+      <p><strong>Eligibility:</strong> {{ course.eligibility }}</p>
+      <p *ngIf="course.additionalInfo"><strong>Additional Info:</strong> {{ course.additionalInfo }}</p>
+    </div>
+  </div>
+  
