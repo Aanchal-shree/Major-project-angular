@@ -19,11 +19,12 @@ import { AdmissionComponent } from './admission/admission.component';
 import { StudentDeskComponent } from './student-desk/student-desk.component';
 
 import { AboutComponent } from './about/about.component';
+import { AprovalComponent } from './aproval/aproval.component';
 
 const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },// Add other routes here
-  // { path: 'home', component: ImageslidingComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'aproval', component: AprovalComponent },
   { path: 'student-desk', component: StudentDeskComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
 ];
@@ -44,8 +45,9 @@ const routes: Routes = [
     FterComponent,
     AluminiComponent,
     AdmissionComponent,
-    StudentDeskComponent
-    AboutComponent
+    StudentDeskComponent,
+    AboutComponent,
+    AprovalComponent
   ],
   imports: [
     [RouterModule.forRoot(routes)],
