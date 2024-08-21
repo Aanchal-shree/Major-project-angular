@@ -70,7 +70,7 @@ Header Component
 
 Navigation Component
 
-About Sbit component
+About WIT component
 
 Footer Component
 

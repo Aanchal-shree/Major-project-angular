@@ -16,6 +16,9 @@ import { LogosComponent } from './logos/logos.component';
 import { FterComponent } from './fter/fter.component';
 import { AluminiComponent } from './alumini/alumini.component';
 import { AdmissionComponent } from './admission/admission.component';
+import { MoreComponent } from './more/more.component';
+import { AprovalsComponent } from './aprovals/aprovals.component';
+import { StudentDeskComponent } from './student-desk/student-desk.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { AdmissionComponent } from './admission/admission.component';
     LogosComponent,
     FterComponent,
     AluminiComponent,
-    AdmissionComponent
+    AdmissionComponent,
+    MoreComponent,
+    AprovalsComponent,
+    StudentDeskComponent
   ],
   imports: [
     BrowserModule,
@@ -41,5 +47,3 @@ import { AdmissionComponent } from './admission/admission.component';
   bootstrap: [AppComponent],
 })
 export class AppModule { }
-
-export class AppRoutingModule { }

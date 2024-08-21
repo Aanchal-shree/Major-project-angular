@@ -1,151 +1,98 @@
+/* General Styles for Header */
 .header {
   display: flex;
-  align-items: center;
-  background-color: white;
-  position: relative;
-  padding: 10px;
-  color: black;
   flex-wrap: wrap;
-}
-
-.name {
-  margin-top: 30px;
-}
-
-.abr {
-  background-color: rgb(53, 53, 53);
-  color: white;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 10px;
-  margin-top: -40px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-#abr {
-  color: white;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 10px;
-  padding-left: 360px;
-  text-align: center;
-}
-
-.sbitlogo img {
-  margin-left: 40px;
-  margin-right: 30px;
-  max-width: 100%;
-  height: auto;
-}
-
-.content {
-  margin-top: 0px;
-  margin-left: 5px;
-  font-size: 20px;
-}
-
-@keyframes floatAnimation {
-  0%,
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-30px);
-    opacity: 1;
-  }
-}
-
-.Angularlogo img {
-  width: 60px;
-  height: 60px;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  animation: floatAnimation 3s ease-in-out infinite;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
 }
 
-.sbitlogo2 img {
-  margin-left: 60px;
-  width: 130px;
-  height: 130px;
+.header .witlogo img,
+.header .universitylogo img,
+.header .witlogo2 img {
   max-width: 100%;
   height: auto;
+}
+
+.header .content {
+  text-align: center;
+  flex: 1;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header h4 {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #666;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header .witlogo,
+  .header .universitylogo,
+  .header .witlogo2 {
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.3em;
+  }
+
+  .header h4 {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
-
-  .name {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-
-  .abr {
-    margin-top: 0px;
-    padding: 15px;
-    font-size: 16px;
-  }
-
-  #abr {
-    padding-left: 0px;
-    text-align: left;
-  }
-
-  .sbitlogo img, .sbitlogo2 img {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100px;
-    height: 100px;
-  }
-
-  .Angularlogo img {
-    width: 50px;
-    height: 50px;
     padding: 10px;
   }
 
-  .content {
-    margin-top: 10px;
-    margin-left: 0;
-    font-size: 18px;
+  .header .witlogo img,
+  .header .universitylogo img,
+  .header .witlogo2 img {
+    width: 80%;
+  }
+
+  .header h1 {
+    font-size: 1.1em;
+  }
+
+  .header h4 {
+    font-size: 0.8em;
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    padding: 10px;
-  }
-
-  .name {
-    font-size: 16px;
-  }
-
-  .abr {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  #abr {
-    padding-left: 0;
-    font-size: 14px;
-  }
-
-  .sbitlogo img, .sbitlogo2 img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .Angularlogo img {
-    width: 40px;
-    height: 40px;
     padding: 5px;
   }
 
-  .content {
-    font-size: 16px;
+  .header .witlogo img,
+  .header .universitylogo img,
+  .header .witlogo2 img {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 1em;
+  }
+
+  .header h4 {
+    font-size: 0.7em;
   }
 }
+

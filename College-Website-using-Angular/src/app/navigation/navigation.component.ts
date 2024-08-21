@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
+  isDropdownOpen = false;
 
+  toggleDropdown(event: Event): void {
+    event.preventDefault(); // Prevents default anchor behavior
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
 }

@@ -1,0 +1,40 @@
+.approval-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .approval-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .approval-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .approval-card:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 768px) {
+    .approval-card {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .approval-card {
+      width: 30%;
+    }
+  }
+  
