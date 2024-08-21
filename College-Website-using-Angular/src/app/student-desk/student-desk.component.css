@@ -1,0 +1,80 @@
+/* Overall container styling */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #1e6e3a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Section styling */
+.section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-top: 0;
+    color: #295a14;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: 15px;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+.image-gallery {
+    display: flex;
+    gap: 10px; /* Adjust the space between images */
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: for rounded corners */
+}
