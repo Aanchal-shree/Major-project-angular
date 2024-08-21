@@ -20,13 +20,14 @@ import { StudentDeskComponent } from './student-desk/student-desk.component';
 
 import { AboutComponent } from './about/about.component';
 import { AprovalComponent } from './aproval/aproval.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },// Add other routes here
   { path: 'about', component: AboutComponent },
   { path: 'aproval', component: AprovalComponent },
   { path: 'student-desk', component: StudentDeskComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
+  {path :'home', component:HomeComponent}
 ];
 
 @NgModule({
@@ -47,7 +48,8 @@ const routes: Routes = [
     AdmissionComponent,
     StudentDeskComponent,
     AboutComponent,
-    AprovalComponent
+    AprovalComponent,
+    HomeComponent
   ],
   imports: [
     [RouterModule.forRoot(routes)],

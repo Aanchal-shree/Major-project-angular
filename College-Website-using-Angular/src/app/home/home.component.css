@@ -1,0 +1,92 @@
+.home-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .director-section, .faculty-section {
+    margin-bottom: 40px;
+  }
+  
+  .director-section h2, .faculty-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .director-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center; /* Center the content horizontally */
+    text-align: center; /* Center text inside the details */
+  }
+  
+  .director-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  
+  .director-details {
+    max-width: 600px;
+  }
+  
+  .message-box {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center; /* Center the text */
+    max-width: 800px; /* Optional: Limit the width */
+    margin-left: auto;
+    margin-right: auto; /* Center the box itself */
+  }
+  
+  .faculty-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .faculty-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Three cards per row with gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .faculty-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .faculty-details h4 {
+    margin: 10px 0 5px;
+  }
+  
+  .faculty-details p {
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .faculty-card {
+      width: calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faculty-card {
+      width: 100%; /* One card per row on small screens */
+    }
+  }
+  

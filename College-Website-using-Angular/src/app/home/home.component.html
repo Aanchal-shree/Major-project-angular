@@ -1,0 +1,34 @@
+<div class="home-container">
+    <!-- Director Section -->
+    <div class="director-section">
+      <h2 >Director's Message</h2>
+      <div class="director-info">
+        <img src="{{director.image}}" alt="Director Image" class="director-img">
+        <div class="director-details">
+          <h3>{{director.name}}</h3>
+          <p>{{director.position}}</p>
+          <div class="message-box">
+            <p>{{director.message}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Faculty Section -->
+    <div class="faculty-section">
+      <h2>Faculty Members</h2>
+      <div class="faculty-list">
+        <div class="faculty-card" *ngFor="let faculty of facultyList">
+          <img [src]="faculty.image" alt="{{faculty.name}}" class="faculty-img">
+          <div class="faculty-details">
+            <h4>{{faculty.name}}</h4>
+            <p>{{faculty.position}}</p>
+            <div class="message-box">
+              <p>{{faculty.details}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
