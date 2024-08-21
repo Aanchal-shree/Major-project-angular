@@ -16,10 +16,12 @@ import { LogosComponent } from './logos/logos.component';
 import { FterComponent } from './fter/fter.component';
 import { AluminiComponent } from './alumini/alumini.component';
 import { AdmissionComponent } from './admission/admission.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  { path: 'admission', component: AdmissionComponent },
-  // Add other routes here
+  { path: 'admission', component: AdmissionComponent },// Add other routes here
+  // { path: 'home', component: ImageslidingComponent },
+  { path: 'about', component: AboutComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
 ];
 
@@ -38,7 +40,8 @@ const routes: Routes = [
     LogosComponent,
     FterComponent,
     AluminiComponent,
-    AdmissionComponent
+    AdmissionComponent,
+    AboutComponent
   ],
   imports: [
     [RouterModule.forRoot(routes)],
