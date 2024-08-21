@@ -21,7 +21,12 @@ import { StudentDeskComponent } from './student-desk/student-desk.component';
 import { AboutComponent } from './about/about.component';
 import { AprovalComponent } from './aproval/aproval.component';
 import { HomeComponent } from './home/home.component';
+import { CareerComponent } from './career/career.component';
+import { FaqComponent } from './faq/faq.component';
+import { FeestructureComponent } from './feestructure/feestructure.component';
+
 import { VcDeskComponent } from './vc-desk/vc-desk.component';
+
 
 const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },// Add other routes here
@@ -51,7 +56,10 @@ const routes: Routes = [
     StudentDeskComponent,
     AboutComponent,
     AprovalComponent,
-    HomeComponent
+    HomeComponent,
+    CareerComponent,
+    FaqComponent,
+    FeestructureComponent
   ],
   imports: [
     [RouterModule.forRoot(routes)],
