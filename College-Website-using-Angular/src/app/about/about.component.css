@@ -1,5 +1,5 @@
 .about-container {
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     /* background-color: #f9f9f9; */
@@ -7,6 +7,11 @@
     /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
   }
   
+  .bg-image{
+    background-image: url("https://lh3.googleusercontent.com/p/AF1QipOLJe7fDUFH6hdwQxFGQ2d9h6MsXNWgohxzXMjT=s1360-w1360-h1020");
+    max-width: 100%;
+  }
+
   h1 {
     font-size: 48px;                       
   font-weight: 700;                      
@@ -59,8 +64,10 @@
   .history{
     margin-bottom: 30px;
     padding: 20px;
+    color: #000;
     background-color: #f0fff0;
     border: 1px solid #dcdcdc;
+    /* opacity: 0.5; */
     border-radius: 8px;
   }
 
@@ -105,12 +112,12 @@
     margin-bottom: 40px;
   }
   
-  /* .campus-life {
+  .campus-life {
     background-color: #0dac32;
     color: white;
     padding: 20px;
     border-radius: 8px;
-  } */
+  }
 
   .image-text-container {
     display: grid;
