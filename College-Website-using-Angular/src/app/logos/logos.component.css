@@ -1,0 +1,29 @@
+/* Container styling */
+div {
+    background-color: white;
+    padding: 10px;
+    margin: 40px auto;
+    max-width: 100%;
+    width: 80%;
+  }
+  
+  /* Flexbox styling for the section */
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+  }
+  
+  /* Image styling */
+  section img {
+    margin-right: 5px;
+    width: 100%; /* Make the image responsive */
+    max-width: 200px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Remove margin from the last image */
+  section img:last-child {
+    margin-right: 0;
+  }
+  

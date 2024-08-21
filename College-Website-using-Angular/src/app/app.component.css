@@ -1,83 +1,108 @@
-* {
+/* General styles */
+body {
+    margin: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  .name {
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.name {
     margin-top: 30px;
-  }
-  
-  .abr {
+}
+
+.abr {
     background-color: rgb(114, 222, 71);
     color: white;
     padding: 10px;
     margin: -40px 0 5px 0;
     text-align: center;
-  }
-  
-  #abr {
+}
+
+#abr {
     color: white;
     padding: 10px 360px;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .content {
+}
+
+.section-title h2 {
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    margin-bottom: 50px;
+}
+
+.content {
     margin: 0 auto;
     max-width: 1200px;
     padding: 50px 0;
-  }
-  
-  .row {
+}
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-  .box {
+}
+
+.box {
     text-align: center;
     flex-basis: calc(25% - 20px);
     margin-bottom: 20px;
-  }
-  
-  .image img {
+}
+
+.box img {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
-  }
-  
-  .container {
+}
+
+.box h4 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.container {
     max-width: 1170px;
     margin: auto;
-  }
-  
-  ul {
+}
+
+ul {
     list-style: none;
-  }
-  
-  .footer {
+}
+
+.footer {
     background-color: #24262b;
     padding: 70px 0;
-  }
-  
-  .footer-col {
+}
+
+.footer-col {
     width: 25%;
     padding: 0 15px;
-  }
-  
-  .footer-col h4 {
+}
+
+.footer-col h4 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
-  }
-  
-  .footer-col h4::before {
+}
+
+.footer-col h4::before {
     content: '';
     position: absolute;
     left: 0;
@@ -86,13 +111,13 @@
     height: 2px;
     box-sizing: border-box;
     width: 50px;
-  }
-  
-  .footer-col ul li:not(:last-child) {
+}
+
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
-  }
-  
-  .footer-col ul li a {
+}
+
+.footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
     color: #bbbbbb;
@@ -100,14 +125,14 @@
     font-weight: 300;
     display: block;
     transition: all 0.3s ease;
-  }
-  
-  .footer-col ul li a:hover {
+}
+
+.footer-col ul li a:hover {
     color: #ffffff;
     padding-left: 8px;
-  }
-  
-  .footer-col .social-links a {
+}
+
+.footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -118,56 +143,73 @@
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
-  }
-  
-  .footer-col .social-links a:hover {
+}
+
+.footer-col .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 1024px) {
-    .footer-col {
-      width: 50%;
-      margin-bottom: 30px;
-    }
-  
-    #abr {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .footer-col {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-  
-    .box {
-      flex-basis: calc(50% - 20px);
-    }
-  
-    .image img {
-      width: 100px;
-      height: 100px;
-    }
-  }
-  
-  @media (max-width: 574px) {
-    .footer-col {
-      width: 100%;
-    }
-  
-    .box {
-      flex-basis: 100%;
-    }
-  
-    #abr {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-  
+}
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 
+    #abr {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 45%;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .box {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .box img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+
+    .box {
+        flex-basis: 100%;
+    }
+
+    #abr {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+}

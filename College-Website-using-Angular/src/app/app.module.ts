@@ -20,6 +20,12 @@ import { MoreComponent } from './more/more.component';
 import { AprovalsComponent } from './aprovals/aprovals.component';
 import { StudentDeskComponent } from './student-desk/student-desk.component';
 
+const routes: Routes = [
+  { path: 'admission', component: AdmissionComponent },
+  // Add other routes here
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,8 +47,10 @@ import { StudentDeskComponent } from './student-desk/student-desk.component';
     StudentDeskComponent
   ],
   imports: [
+    [RouterModule.forRoot(routes)],
     BrowserModule,
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })
