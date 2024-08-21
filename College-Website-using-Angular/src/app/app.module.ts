@@ -30,7 +30,10 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'aproval', component: AprovalComponent },
   { path: 'student-desk', component: StudentDeskComponent },
-  {path :'home', component:HomeComponent}
+  {path :'home', component:HomeComponent},
+  {path:'faq', component:FaqComponent},
+  {path:'feestructure', component:FeestructureComponent},
+  {path:'career', component:CareerComponent}
 ];
 
 @NgModule({
