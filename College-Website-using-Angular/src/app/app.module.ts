@@ -34,7 +34,13 @@ const routes: Routes = [
   { path: 'aproval', component: AprovalComponent },
   { path: 'student-desk', component: StudentDeskComponent },
   {path :'home', component:HomeComponent},
+
+  {path:'faq', component:FaqComponent},
+  {path:'feestructure', component:FeestructureComponent},
+  {path:'career', component:CareerComponent}
+
   {path:'vc-desk', component:VcDeskComponent}
+
 ];
 
 @NgModule({

@@ -27,7 +27,7 @@ export class HomeComponent {
       details: 'Specializes in Applied Mathematics and Data Analysis.'
     },
     {
-      name: 'Dr. Snatosh Kumar',
+      name: 'Dr. Santosh Kumar',
       position: 'Assistant Professor of Computer Science',
       image: 'assets/faculty3.jpg',
       details: 'Specializes in DBMS, Information Security, and Automata Theory.'
@@ -45,7 +45,7 @@ export class HomeComponent {
       details: 'Specializes in Compiler Design and Computer Architecture.'
     },
     {
-      name: 'Dr. Aashish Kumar',
+      name: 'Dr. Ashish Kumar',
       position: 'Assistant Professor of Mechanical',
       image: 'assets/faculty3.jpg',
       details: 'Specializes in Mechanics.'
