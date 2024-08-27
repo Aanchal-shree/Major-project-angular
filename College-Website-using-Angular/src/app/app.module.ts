@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,6 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { CareerComponent } from './career/career.component';
 import { FaqComponent } from './faq/faq.component';
 import { FeestructureComponent } from './feestructure/feestructure.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 
 const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },// Add other routes here
@@ -58,11 +60,13 @@ const routes: Routes = [
     HomeComponent,
     CareerComponent,
     FaqComponent,
-    FeestructureComponent
+    FeestructureComponent,
+    ChatbotComponent
   ],
   imports: [
     [RouterModule.forRoot(routes)],
     BrowserModule,
+    FormsModule
   ],
   exports: [RouterModule],
   providers: [],
