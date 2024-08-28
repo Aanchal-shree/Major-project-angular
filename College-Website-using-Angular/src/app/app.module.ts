@@ -27,15 +27,22 @@ import { FaqComponent } from './faq/faq.component';
 import { FeestructureComponent } from './feestructure/feestructure.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 
+import { VcDeskComponent } from './vc-desk/vc-desk.component';
+
+
 const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },// Add other routes here
   { path: 'about', component: AboutComponent },
   { path: 'aproval', component: AprovalComponent },
   { path: 'student-desk', component: StudentDeskComponent },
   {path :'home', component:HomeComponent},
+
   {path:'faq', component:FaqComponent},
   {path:'feestructure', component:FeestructureComponent},
   {path:'career', component:CareerComponent}
+
+  {path:'vc-desk', component:VcDeskComponent}
+
 ];
 
 @NgModule({
