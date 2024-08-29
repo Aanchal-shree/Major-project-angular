@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -28,7 +28,8 @@ import { FeestructureComponent } from './feestructure/feestructure.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 
 import { VcDeskComponent } from './vc-desk/vc-desk.component';
-
+import { AlumniRegistrationComponent } from './alumni-registration/alumni-registration.component';
+import { AlumniService } from './alumni.service';
 
 const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },// Add other routes here
@@ -40,7 +41,7 @@ const routes: Routes = [
   {path:'faq', component:FaqComponent},
   {path:'feestructure', component:FeestructureComponent},
   {path:'career', component:CareerComponent},
-
+  {path:'alumni-registration', component:AlumniRegistrationComponent},
   {path:'vc-desk', component:VcDeskComponent}
 
 ];
@@ -68,15 +69,17 @@ const routes: Routes = [
     CareerComponent,
     FaqComponent,
     FeestructureComponent,
-    ChatbotComponent
+    ChatbotComponent,
+    AlumniRegistrationComponent
   ],
   imports: [
     [RouterModule.forRoot(routes)],
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [AlumniService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,0 +1,62 @@
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #495057;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form input[required]::placeholder,
+form textarea::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+form input[required]:invalid,
+form textarea:invalid {
+    border-color: #dc3545;
+}
+
+form input[required]:valid,
+form textarea:valid {
+    border-color: #28a745;
+}

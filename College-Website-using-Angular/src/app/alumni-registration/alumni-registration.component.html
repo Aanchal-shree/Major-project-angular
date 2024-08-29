@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()" #alumniForm="ngForm">
+    <input type="text" name="name" [(ngModel)]="alumni.name" placeholder="Name" required>
+    <input type="email" name="email" [(ngModel)]="alumni.email" placeholder="Email" required>
+    <input type="text" name="phone" [(ngModel)]="alumni.phone" placeholder="Phone" required>
+    <input type="number" name="graduationYear" [(ngModel)]="alumni.graduationYear" placeholder="Graduation Year" required>
+    <textarea name="message" [(ngModel)]="alumni.message" placeholder="Message"></textarea>
+    <button type="submit">Register</button>
+</form>
