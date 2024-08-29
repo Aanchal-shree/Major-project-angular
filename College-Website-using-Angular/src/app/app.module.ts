@@ -37,7 +37,7 @@ const routes: Routes = [
 
   {path:'faq', component:FaqComponent},
   {path:'feestructure', component:FeestructureComponent},
-  {path:'career', component:CareerComponent}
+  {path:'career', component:CareerComponent},
 
   {path:'vc-desk', component:VcDeskComponent}
 
