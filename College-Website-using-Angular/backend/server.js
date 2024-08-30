@@ -20,6 +20,7 @@ mongoose.connect('mongodb://localhost:27017/yourDBName', {
 const keywordResponses = {
 
         "hi": "Hello! How can I assist you today?",
+        "fine":"That's good to know. How can I help you today?",
         "hey": "Hello! How can I assist you today?",
         "good morning": "Good morning! How can I help you today?",
         "namaste": "Namaste! How can I assist you today?",
@@ -38,7 +39,9 @@ const keywordResponses = {
         "alumni": "Our alumni network is active and provides support in terms of networking and career advice. Visit our alumni page to connect with former students.",
         "faculty": "Our faculty consists of experienced professionals and academics dedicated to providing high-quality education. Learn more about our faculty members on the faculty page.",
         "research": "The college is involved in cutting-edge research across various fields. For information on current research projects and opportunities to participate, visit our research page.",
-        "student_life": "Student life at our college includes numerous clubs, societies, and extracurricular activities. Explore the student life section on our website to find out more."
+        "student_life": "Student life at our college includes numerous clubs, societies, and extracurricular activities. Explore the student life section on our website to find out more.",
+        "thanks":"Thank you for your time!",
+        "bye":"I hope you had a good experience. See you soon! Bye!"
     
     
 };
