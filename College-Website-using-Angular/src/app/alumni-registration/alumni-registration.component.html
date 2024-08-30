@@ -4,5 +4,8 @@
     <input type="text" name="phone" [(ngModel)]="alumni.phone" placeholder="Phone" required>
     <input type="number" name="graduationYear" [(ngModel)]="alumni.graduationYear" placeholder="Graduation Year" required>
     <textarea name="message" [(ngModel)]="alumni.message" placeholder="Message"></textarea>
+    
     <button type="submit">Register</button>
-</form>
+    <button type="button" (click)="downloadDetails()">Download Registration Details</button>
+  </form>
+  
