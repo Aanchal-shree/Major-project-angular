@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -24,9 +25,11 @@ import { HomeComponent } from './home/home.component';
 import { CareerComponent } from './career/career.component';
 import { FaqComponent } from './faq/faq.component';
 import { FeestructureComponent } from './feestructure/feestructure.component';
-
+import { ChatbotComponent } from './chatbot/chatbot.component';
+import { ChatbotService } from './chatbot.service';
 import { VcDeskComponent } from './vc-desk/vc-desk.component';
-
+import { AlumniRegistrationComponent } from './alumni-registration/alumni-registration.component';
+import { AlumniService } from './alumni.service';
 
 const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },// Add other routes here
@@ -38,8 +41,9 @@ const routes: Routes = [
   {path:'faq', component:FaqComponent},
   {path:'feestructure', component:FeestructureComponent},
   {path:'career', component:CareerComponent},
-
-  {path:'vc-desk', component:VcDeskComponent}
+  {path:'alumni-registration', component:AlumniRegistrationComponent},
+  {path:'vc-desk', component:VcDeskComponent},
+  {path:'chatbot', component:ChatbotComponent}
 
 ];
 
@@ -65,14 +69,18 @@ const routes: Routes = [
     HomeComponent,
     CareerComponent,
     FaqComponent,
-    FeestructureComponent
+    FeestructureComponent,
+    ChatbotComponent,
+    AlumniRegistrationComponent
   ],
   imports: [
     [RouterModule.forRoot(routes)],
     BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [AlumniService, ChatbotService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

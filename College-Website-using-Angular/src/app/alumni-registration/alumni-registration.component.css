@@ -1,0 +1,99 @@
+/* Polished styling for the alumni registration form */
+.alumni-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+  }
+  
+  .form-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #468e50;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 14px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+  }
+  
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px; /* Space between the buttons and the elements above */
+  }
+  
+  .btn-primary {
+    background-color: #5e51ed;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.02);
+  }
+  
+  .btn + .btn {
+    margin-left: 10px; /* Space between the two buttons */
+  }
+  
+  @media (max-width: 576px) {
+    .alumni-form {
+      padding: 20px;
+    }
+  
+    .btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .btn + .btn {
+      margin-left: 0; /* No space between buttons on small screens */
+      margin-top: 10px; /* Space between stacked buttons on small screens */
+    }
+  }
+  
+  
