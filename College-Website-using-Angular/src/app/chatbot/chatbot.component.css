@@ -1,19 +1,67 @@
 /* src/app/chat/chat.component.css */
 .chat-container {
-  width: 50%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .message {
   margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.message p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.message p strong {
+  display: block;
+  font-weight: 600;
+  color: #333;
+}
+
+.message p:first-child {
+  color: #007bff; /* User message color */
+}
+
+.message p:last-child {
+  color: #28a745; /* Bot message color */
 }
 
 input {
-  width: 70%;
   padding: 10px;
-  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
 }
