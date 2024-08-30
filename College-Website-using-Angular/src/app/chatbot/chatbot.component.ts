@@ -1,32 +1,22 @@
+// src/app/chat/chat.component.ts
 import { Component } from '@angular/core';
-import { OpenaiService } from '../openai.service';
-
-interface Message {
-  text: string;
-  sender: 'user' | 'bot';
-}
+import { ChatbotService } from '../chatbot.service';
 
 @Component({
   selector: 'app-chatbot',
   templateUrl: './chatbot.component.html',
-  styleUrls: ['./chatbot.component.css']
+  styleUrls: ['./chatbot.component.css'],
 })
 export class ChatbotComponent {
-  userMessage = '';
-  conversation: Message[] = []; 
+  messages: { user: string; bot: string }[] = [];
+  userMessage: string = '';
 
-  constructor(private openaiService: OpenaiService) { }
+  constructor(private chatbotService: ChatbotService) {}
 
-  sendMessage() {
-    const message = this.userMessage.trim();
-    if (message) {
-      this.conversation.push({ text: message, sender: 'user' });
+  sendMessage(): void {
+    this.chatbotService.sendMessage(this.userMessage).subscribe((response) => {
+      this.messages.push({ user: this.userMessage, bot: response.botMessage });
       this.userMessage = '';
-
-      this.openaiService.sendMessage(message).subscribe((response) => {
-        const reply = response.choices[0].message.content.trim();
-        this.conversation.push({ text: reply, sender: 'bot' });
-      });
-    }
+    });
   }
 }

@@ -1,33 +1,19 @@
+/* src/app/chat/chat.component.css */
 .chat-container {
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .conversation {
-    border: 1px solid #ccc;
-    padding: 15px;
-    height: 300px;
-    overflow-y: scroll;
-    margin-bottom: 10px;
-  }
-  
-  .user {
-    text-align: right;
-    color: blue;
-  }
-  
-  .bot {
-    text-align: left;
-    color: green;
-  }
-  
-  input {
-    width: calc(100% - 75px);
-    padding: 10px;
-  }
-  
-  button {
-    width: 60px;
-    padding: 10px;
-  }
-  
+  width: 50%;
+  margin: auto;
+}
+
+.message {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+}

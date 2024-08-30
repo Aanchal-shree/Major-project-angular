@@ -26,7 +26,7 @@ import { CareerComponent } from './career/career.component';
 import { FaqComponent } from './faq/faq.component';
 import { FeestructureComponent } from './feestructure/feestructure.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
-
+import { ChatbotService } from './chatbot.service';
 import { VcDeskComponent } from './vc-desk/vc-desk.component';
 import { AlumniRegistrationComponent } from './alumni-registration/alumni-registration.component';
 import { AlumniService } from './alumni.service';
@@ -42,7 +42,8 @@ const routes: Routes = [
   {path:'feestructure', component:FeestructureComponent},
   {path:'career', component:CareerComponent},
   {path:'alumni-registration', component:AlumniRegistrationComponent},
-  {path:'vc-desk', component:VcDeskComponent}
+  {path:'vc-desk', component:VcDeskComponent},
+  {path:'chatbot', component:ChatbotComponent}
 
 ];
 
@@ -79,7 +80,7 @@ const routes: Routes = [
     HttpClientModule
   ],
   exports: [RouterModule],
-  providers: [AlumniService],
+  providers: [AlumniService, ChatbotService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
