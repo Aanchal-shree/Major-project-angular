@@ -1,62 +1,99 @@
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+/* Polished styling for the alumni registration form */
+.alumni-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    transition: border-color 0.3s ease-in-out;
-}
-
-form input:focus,
-form textarea:focus {
-    border-color: #495057;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-form button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+    border: 1px solid #dcdcdc;
+  }
+  
+  .form-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #468e50;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 14px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+  }
+  
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
     border: none;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-form button[type="submit"]:hover {
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px; /* Space between the buttons and the elements above */
+  }
+  
+  .btn-primary {
+    background-color: #5e51ed;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
     background-color: #0056b3;
-}
-
-form input[required]::placeholder,
-form textarea::placeholder {
-    color: #6c757d;
-    opacity: 1;
-}
-
-form input[required]:invalid,
-form textarea:invalid {
-    border-color: #dc3545;
-}
-
-form input[required]:valid,
-form textarea:valid {
-    border-color: #28a745;
-}
+    transform: scale(1.02);
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.02);
+  }
+  
+  .btn + .btn {
+    margin-left: 10px; /* Space between the two buttons */
+  }
+  
+  @media (max-width: 576px) {
+    .alumni-form {
+      padding: 20px;
+    }
+  
+    .btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .btn + .btn {
+      margin-left: 0; /* No space between buttons on small screens */
+      margin-top: 10px; /* Space between stacked buttons on small screens */
+    }
+  }
+  
+  

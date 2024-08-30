@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AlumniService } from '../alumni.service';
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
@@ -17,9 +17,21 @@ export class AlumniRegistrationComponent {
     graduationYear:  null as number | null, // Explicitly specify the type
     message: ''
   };
-
-  constructor(private alumniService: AlumniService) { }
-
+  currentYear: number;
+  constructor(private alumniService: AlumniService) {
+    this.currentYear = new Date().getFullYear(); // Initialize currentYear
+   }
+  
+   ngOnInit(): void {
+    // Initialization logic if needed
+  }
+  validateGraduationYear(): boolean {
+    if (this.alumni.graduationYear && this.alumni.graduationYear > this.currentYear) {
+      alert('Graduation year cannot be greater than the current year.');
+      return false;
+    }
+    return true;
+  }
   onSubmit() {
     this.alumniService.registerAlumni(this.alumni).subscribe(
       response => alert('Alumni registered successfully!'),
