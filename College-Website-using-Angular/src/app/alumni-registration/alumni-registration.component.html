@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()" #alumniForm="ngForm" class="alumni-form">
+<form (ngSubmit)="onSubmit(alumniForm)" #alumniForm="ngForm" class="alumni-form">
   <h2 class="form-heading">Alumni Registration Form</h2>
 
   <div class="form-group mb-3">
@@ -8,12 +8,24 @@
   
   <div class="form-group mb-3">
     <label for="email" class="form-label">Email</label>
-    <input type="email" id="email" name="email" [(ngModel)]="alumni.email" class="form-control" placeholder="Email" required>
+    <input type="email" id="email" name="email" [(ngModel)]="alumni.email" class="form-control" placeholder="Email" required 
+           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email address"
+           #email="ngModel">
+    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
+      <div *ngIf="email.errors?.['required']">Email is required.</div>
+      <div *ngIf="email.errors?.['pattern']">Enter a valid email address.</div>
+    </div>
   </div>
 
   <div class="form-group mb-3">
     <label for="phone" class="form-label">Phone</label>
-    <input type="text" id="phone" name="phone" [(ngModel)]="alumni.phone" class="form-control" placeholder="Phone" required>
+    <input type="text" id="phone" name="phone" [(ngModel)]="alumni.phone" class="form-control" placeholder="Phone" required
+           pattern="\d{10}" title="Enter a 10-digit phone number"
+           #phone="ngModel">
+    <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="text-danger">
+      <div *ngIf="phone.errors?.['required']">Phone number is required.</div>
+      <div *ngIf="phone.errors?.['pattern']">Enter a 10-digit phone number.</div>
+    </div>
   </div>
 
   <div class="form-group mb-3">
@@ -27,6 +39,5 @@
   </div>
 
   <button type="submit" class="btn btn-primary">Register</button>
-  <button type="button" class="btn btn-secondary" (click)="downloadDetails()">Download Registration Details</button>
+  <button type="button" class="btn btn-secondary" (click)="downloadDetails()" [disabled]="!isRegistered">Download Registration Details</button>
 </form>
-
