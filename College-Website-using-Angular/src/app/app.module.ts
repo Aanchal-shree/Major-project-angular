@@ -30,6 +30,7 @@ import { ChatbotService } from './chatbot.service';
 import { VcDeskComponent } from './vc-desk/vc-desk.component';
 import { AlumniRegistrationComponent } from './alumni-registration/alumni-registration.component';
 import { AlumniService } from './alumni.service';
+import { ReservationComponent } from './reservation/reservation.component';
 
 const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },// Add other routes here
@@ -71,7 +72,8 @@ const routes: Routes = [
     FaqComponent,
     FeestructureComponent,
     ChatbotComponent,
-    AlumniRegistrationComponent
+    AlumniRegistrationComponent,
+    ReservationComponent
   ],
   imports: [
     [RouterModule.forRoot(routes)],
