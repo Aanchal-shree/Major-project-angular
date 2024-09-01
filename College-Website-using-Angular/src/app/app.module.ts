@@ -45,8 +45,8 @@ const routes: Routes = [
   {path:'alumni-registration', component:AlumniRegistrationComponent},
   {path:'vc-desk', component:VcDeskComponent},
   {path:'chatbot', component:ChatbotComponent},
-  {path:'programs', component:CoursesComponent}
-
+  {path:'programs', component:CoursesComponent},
+  {path:'reservation', component:ReservationComponent}
 ];
 
 @NgModule({
