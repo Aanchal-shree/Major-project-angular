@@ -45,7 +45,7 @@ const routes: Routes = [
   {path:'alumni-registration', component:AlumniRegistrationComponent},
   {path:'vc-desk', component:VcDeskComponent},
   {path:'chatbot', component:ChatbotComponent},
-  {path:'reservation', component:ReservationComponent}
+  {path:'programs', component:CoursesComponent}
 
 ];
 
