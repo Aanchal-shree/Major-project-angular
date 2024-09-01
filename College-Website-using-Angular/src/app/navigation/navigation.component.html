@@ -1,5 +1,6 @@
 <nav class="navbar">
-  <ul>
+  <button class="navbar-toggle" (click)="toggleMenu()">☰</button>
+  <ul class="navbar-menu">
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="/home">People</a></li>
     <li><a routerLink="/about">About</a></li>
@@ -13,7 +14,6 @@
   </ul>
 </nav>
 
-<router-outlet></router-outlet>
 
 
 

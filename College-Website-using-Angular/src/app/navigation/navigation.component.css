@@ -1,27 +1,70 @@
+/* Base styles */
 .navbar {
-  background-color: #f8f9fa; /* You can customize the background color */
-  padding: 10px; /* Adjust the padding as needed */
+  background-color: #333;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-toggle {
+  display: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* This aligns the list items horizontally */
-  justify-content: space-around; /* This will space out the items evenly */
+  display: flex;
+  justify-content: space-around;
 }
 
-.navbar ul li {
-  margin: 0 15px; /* Adjust the space between each item */
+.navbar li {
+  padding: 14px 20px;
 }
 
-.navbar ul li a {
+.navbar a {
+  color: white;
+  text-align: center;
   text-decoration: none;
-  color: #333; /* Customize the text color */
-  font-size: 18px; /* Adjust the font size */
-  font-weight: bold;
+  display: block;
 }
 
-.navbar ul li a:hover {
-  color: #007bff; /* Change the color on hover */
+/* Hover effects */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navbar-toggle {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }

@@ -1,4 +1,4 @@
-.image-container {
+/* .image-container {
   width: 100%;
   max-width: 1400px;
   height: 800px;
@@ -23,4 +23,42 @@
 
 .image.active {
   opacity: 1;
+} */
+/* Base styles for the image container */
+/* Base styles for the image container */
+.image-container {
+  position: relative;
+  width: 100vw; /* Set the container width to 100% of the viewport width */
+  height: 100vh; /* Set the container height to 100% of the viewport height */
+  overflow: hidden; /* Hide overflow to prevent images from spilling out */
+}
+
+/* Image styles */
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire container without distortion */
+  display: block;
+  opacity: 0.7; /* Slight transparency for inactive images */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition for effects */
+}
+
+/* Active image styles */
+.image-container .image.active {
+  opacity: 1; /* Fully opaque for active image */
+  transform: scale(1.05); /* Slight zoom effect for active image */
+}
+
+/* Responsive styles (if needed) */
+@media screen and (max-width: 768px) {
+  .image-container .image {
+    transform: none; /* Remove the zoom effect on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-container .image {
+    opacity: 1; /* Ensure all images are fully visible on smaller screens */
+    transform: none; /* No zoom effect on smaller screens */
+  }
 }
